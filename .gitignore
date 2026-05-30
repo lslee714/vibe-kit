@@ -1,0 +1,31 @@
+
+  # OS/editor
+  .DS_Store
+  .vscode/
+  .idea/
+
+  # Agent/local scratch
+  .codex/
+  .claude/
+  .cursor/
+  *.local.md
+  NOTES.md
+  SCRATCH.md
+
+  # Generated app outputs, if created inside this repo
+  apps/
+  dist/
+  build/
+  .next/
+  node_modules/
+
+  # Env/secrets
+  .env
+  .env.*
+  !.env.example
+
+  # Logs
+  *.log
+  npm-debug.log*
+  yarn-debug.log*
+  pnpm-debug.log*
