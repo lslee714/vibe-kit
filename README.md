@@ -16,6 +16,24 @@ production-shaped MVP quickly.
 6. Run the launch, SEO, and payment checklists.
 7. Deploy to Vercel.
 
+## Example Use
+
+For a simple blog app, this repo should be used as the reusable launcher, not as
+the blog app itself.
+
+```bash
+# 1. Use the product prompt to write a spec.
+$EDITOR PRODUCT.md
+
+# 2. Later, generate the real app beside this repo.
+scripts/create-app.sh next-saas ../simple-blog
+
+# 3. Work inside the generated app.
+cd ../simple-blog
+```
+
+Example inputs and outputs live in `examples/blog/`.
+
 ## First Template
 
 The first planned template is `templates/next-saas`.
@@ -44,6 +62,7 @@ implemented yet.
 - `docs/` stack and workflow notes.
 - `scripts/create-app.sh` minimal stub for copying templates later.
 - `templates/` future app templates.
+- `examples/` small examples showing how to use the system.
 
 ## Principles
 
